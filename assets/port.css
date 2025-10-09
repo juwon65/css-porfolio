@@ -128,3 +128,64 @@ h4 {
     width: 18%;
 }
 
+.four-sec {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    margin: 80px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+
+.con-hed {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+}
+
+.con-par {
+    opacity: 0.6;
+}
+
+
+.con-sec {
+    margin-top: 50px;
+}
+
+label {
+    font-size: 25px;
+    opacity: 0.7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+input {
+    padding: 16px;
+    width: 420px;
+    border-radius: 20px;
+    
+}
+
+.for-bot {
+    display: flex;
+    gap:  4em;
+    margin-top: 25px;
+    
+}
+
+button {
+    background-color: green;
+    padding: 13px;
+    width: 120px;
+    border: 1px solid green;
+    border-radius: 10px;
+    color: white;
+}
+
+button:hover {
+    background-color: red;
+    color: black;
+    border: 1px solid red;
+}
