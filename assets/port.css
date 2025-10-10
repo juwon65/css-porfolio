@@ -3,98 +3,105 @@ body {
     margin: 0;
     padding: 0;
     background-color: lightgray;
-
-}
-
-.whole-bod {
-    margin: 0;
 }
 
 .fir-sec {
     margin: 0;
 }
 
-a {
-    color: red;
+header {
+    background-color: black;
+    margin: 0;
 }
 
-ul {
-    display: flex;
-    padding: 16px;
-    margin-left: 20em;
+.nav-bar {
     position: fixed;
-    list-style-type: none;
-    gap: 7em;
+    width: 100%;
+    z-index: 9999;
+}
+
+.nav-bar ul {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    gap: 7vw;
 }
 
 a {
-    color: white;
     text-decoration: none;
+    color: white;
 }
+
+.nav-bar li:hover {
+    background-color: red;
+}
+
+
 
 .sec-sec {
-    color: white;
-    display: flex;
-    gap: 6em;
+
     background-image: url(./img/download.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 13em;
-}
-h1 {
-    font-size: 125px;
-}
-
-h3 {
-    font-size: 40px;
-}
-
-.rel-name {
-    width: 60%;
-    padding-top: 5em;
-    margin-left: 8em;
-}
-
-.secd-sec {
-    width: 30%;
-    padding-top: 5em;
-    margin-right: 5em;
+    color: white;
+    display: flex;
+    gap: 10vw;
+    padding-top: 150px;
+    padding-left: 60px;
+    padding-bottom: 120px;
+    
 }
 
 .abt-me {
-    margin-left: 3em;
     background-color: black;
-    text-align: center;
     padding: 16px;
+    width: 20vw;
+    justify-content: center;
+    align-items: center;
     border-radius: 25px;
 }
-
 .abt-me:hover {
     background-color: green;
 }
 
-.sec-abt {
-    text-align: center;
-    
+h5 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 70px;
 }
 
 h4 {
     font-size: 30px;
+    text-align: center;
+}
+
+.sec-abt {
+    padding-bottom: 50px;
+    padding-top: 40px;
 }
 
 .rel-opa {
+    height: 10vh;
     opacity: 0.3;
+    text-align: center;
 }
 
 .spon-ap {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: ;
 }
 
 .proj-sec {
     margin: 35px;
+}
+
+.the-img {
+    border-radius: 20px;
 }
 
 
@@ -110,9 +117,14 @@ h4 {
 
 .the-box {
     display: flex;
-    margin-left: 12em;
+    align-items: center;
+    justify-content: center;
     gap: 3em;
     margin-bottom: 3em;
+}
+
+.box-hed {
+    font-size: 30px;
 }
 
 @media (max-width:1000px) {
@@ -122,6 +134,11 @@ h4 {
 }
 .wha-me {
     justify-content: center;
+    align-items: center;
+    background-color:black;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px 3px;
     border: 1px solid black;
     padding: 32px;
 }
@@ -133,8 +150,6 @@ h4 {
 .four-sec {
     background-color: black;
     color: white;
-    border-radius: 30px;
-    margin: 80px;
     padding: 40px;
     display: flex;
     justify-content: space-around;
