@@ -52,6 +52,8 @@ a {
     
 }
 
+
+
 .abt-me {
     background-color: black;
     padding: 16px;
@@ -75,6 +77,10 @@ h3 {
 h4 {
     font-size: 30px;
     text-align: center;
+}
+
+.the-abt {
+    background-color: rgb(230, 225, 219);
 }
 
 .sec-abt {
@@ -151,12 +157,17 @@ h4 {
     background-color: black;
     color: white;
     padding: 40px;
-    display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
     
 }
 
+.con-fir {
+    justify-content: center;
+    align-items: center;
+}
 .con-hed {
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
@@ -171,38 +182,16 @@ h4 {
     margin-top: 50px;
 }
 
-label {
-    font-size: 25px;
-    opacity: 0.7;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-
-input {
-    padding: 16px;
-    width: 420px;
-    border-radius: 20px;
-    
-}
-
-.for-bot {
-    display: flex;
-    gap:  4em;
-    margin-top: 25px;
-    
-}
-
-button {
+.the-em {
     background-color: green;
-    padding: 13px;
-    width: 120px;
-    border: 1px solid green;
-    border-radius: 10px;
-    color: white;
+    padding: 16px;
+    border-radius: 13px;
+    
 }
 
-button:hover {
+.the-em:hover {
     background-color: red;
-    color: black;
-    border: 1px solid red;
+    
 }
+
+
