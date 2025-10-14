@@ -74,9 +74,15 @@ h3 {
     font-size: 70px;
 }
 
-h4 {
+.parent {
     font-size: 30px;
+    margin: 0;
+    padding: 0;
     text-align: center;
+}
+
+.child {
+    color: rgb(35, 239, 35);
 }
 
 .the-abt {
@@ -96,14 +102,13 @@ h4 {
 
 .spon-ap {
     display: flex;
-    align-items: center;
+    margin-left: 8vw;
     justify-content: center;
-
-    margin-bottom: ;
 }
 
 .proj-sec {
-    margin: 35px;
+    background: radial-gradient(blue,green);
+    padding: 30px;
 }
 
 .the-img {
@@ -140,17 +145,30 @@ h4 {
 }
 .wha-me {
     justify-content: center;
+    text-align: center;
     align-items: center;
     background-color:black;
     color: white;
     border-radius: 30px;
-    box-shadow: 3px 3px 3px 3px;
+    box-shadow:  2px 2px 2px;
     border: 1px solid black;
     padding: 32px;
 }
 
+@media (max-width:1000px) {
+    .wha-me {
+        margin-bottom: 40px;
+    }
+}
+
 .box-pix {
     width: 18%;
+}
+
+@media (max-width:1000px)  {
+    .box-pic {
+        margin-bottom: 40px;
+    }
 }
 
 .four-sec {
@@ -183,15 +201,27 @@ h4 {
 }
 
 .the-em {
-    background-color: green;
+    background: linear-gradient(red,blue);
     padding: 16px;
     border-radius: 13px;
     
 }
 
 .the-em:hover {
-    background-color: red;
+    background: radial-gradient(blue,green);
     
 }
 
+.rel-img {
+    width: 337px;
+    height: 327px;
+}
+
+@media (max-width:1000px) {
+    .rel-img {
+        width: 100%;
+        height: auto;
+        border-radius: 23px;
+    }
+}
 
