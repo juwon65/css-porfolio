@@ -32,8 +32,15 @@ a {
     color: white;
 }
 
+.nav-bar li {
+    font-size: 15px;
+    transition-property: font-size;
+    transition-duration: 2s;
+    transition-delay: 2s;
+}
+
 .nav-bar li:hover {
-    background-color: red;
+    font-size: 28px;
 }
 
 
@@ -104,15 +111,36 @@ h3 {
     display: flex;
     margin-left: 8vw;
     justify-content: center;
+    animation-duration: 4s;
+    animation-name: slide-in;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
 }
 
+@keyframes slide-in {
+    from {
+        translate: 150vw 0;
+        scale: 200% 1;
+    }
+
+    to {
+        translate: 0 0;
+        scale: 100% 1;
+    }
+}
+
+
 .proj-sec {
-    background: radial-gradient(blue,green);
     padding: 30px;
 }
 
 .the-img {
     border-radius: 20px;
+}
+
+.the-img:hover {
+    width: 59%;
+    box-shadow: 1px 1px 2px 2px;
 }
 
 
@@ -148,11 +176,45 @@ h3 {
     text-align: center;
     align-items: center;
     background-color:black;
+    animation-duration: 15s;
+    animation-name: change;
+    animation-iteration-count: infinite;
     color: white;
     border-radius: 30px;
     box-shadow:  2px 2px 2px;
     border: 1px solid black;
     padding: 32px;
+}
+
+@keyframes change {
+    0% {
+        background-color: black;
+    }
+
+    20% {
+        background-color: green;
+        border: 1px solid green;
+    }
+
+    40% {
+        background-color: red;
+        border: 1px solid red;
+    }
+
+    60% {
+        background-color: blue;
+        border: 1px solid blue;
+    }
+
+    80% {
+        background-color: yellow;
+        border: 1px solid yellow;
+    }
+
+    100% {
+        background-color: black;
+        border: 1px solid black;
+    }
 }
 
 @media (max-width:1000px) {
@@ -215,6 +277,16 @@ h3 {
 .rel-img {
     width: 337px;
     height: 327px;
+    transition: 
+    width 2s,
+    height 2s,
+    rotate 4s;
+}
+
+.rel-img:hover {
+    width: 350px;
+    height: 347px;
+    rotate: 360deg;
 }
 
 @media (max-width:1000px) {
@@ -222,6 +294,18 @@ h3 {
         width: 100%;
         height: auto;
         border-radius: 23px;
+        transition: 
+        width 2s,
+        height 2s,
+        rotate 4s;
+    }
+}
+
+@media (max-width:1000px) {
+    .rel-img:hover {
+        width: 100%;
+        height: auto;
+        rotate: 380deg;
     }
 }
 
